@@ -1,0 +1,74 @@
+\RequirePackage{plautopatch}
+\documentclass[report,paper=a4, fontsize=12pt, line_length=16cm, number_of_lines=33,dvipdfmx]{jlreq}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath,amssymb}
+%\usepackage[bold,uplatex]{otf}
+\usepackage{jlreq-deluxe}
+%% Fonts
+\usepackage{tgtermes,tgheros,tgcursor}
+\renewcommand{\bfdefault}{bx}
+\usepackage[libertine]{newtxmath}
+\usepackage{hyperref}
+\hypersetup{colorlinks=true,linkcolor=blue,citecolor=blue}
+
+\usepackage{graphicx}
+\graphicspath{{fig/}}
+
+\usepackage{physics}
+\usepackage{color}
+
+\usepackage{tcolorbox}
+\tcbuselibrary{breakable, skins, theorems}
+
+\newenvironment{myquote}{\begin{tcolorbox}[
+  colback = blue!5, after = \noindent] }{\end{tcolorbox}}
+\newenvironment{important}{\begin{tcolorbox}[
+  colback = white,
+  colframe = red!35,
+  boxrule = 2mm,
+  fonttitle = \bfseries,
+  after = \noindent] }{\end{tcolorbox}}
+\newenvironment{mycite}{\\ \qquad \textbullet\ }{\\}
+
+\numberwithin{equation}{chapter}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                          often used macro
+
+\title{現代物理学の基礎\\ ―特殊相対論と量子力学入門―}
+\author{山口　哲}
+\date{\today}
+\begin{document}
+
+\maketitle
+\tableofcontents
+\subsubsection*{まえがき}
+これは、大阪大学理学部物理学科の専門科目「現代物理学の基礎」の授業のための資料です。
+
+この資料の再配布等は自由に行っていただいて結構です。
+
+\chapter{導入}
+
+\part{特殊相対論入門}
+
+\chapter{光速}
+
+\chapter{相対性原理}
+
+\chapter{特殊相対論の基礎}
+\section{特殊相対論の原理}
+\section{慣性系}
+\section{ローレンツ変換}
+\section{ローレンツ変換からの簡単な帰結}
+\subsection{走っている時計の遅れ}
+\subsection{速度の合成則}
+
+\chapter{特殊相対論的力学}
+\section{ミンコフスキー時空と固有時間}
+\section{４元ベクトル}
+\section{運動方程式}
+\section{運動量とエネルギー}
+
+\part{量子力学入門}
+
+
+\end{document}

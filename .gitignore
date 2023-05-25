@@ -1,0 +1,11 @@
+*.aux
+*.dvi
+*.log
+*.out
+*.toc
+*.synctex.gz
+*.fdb_latexmk
+*.bbl
+*.blg
+*.fls
+modphys.pdf
